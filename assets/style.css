@@ -2,7 +2,7 @@
     font-family: "Permanent Marker", cursive;
 }
 .jumbotron-image {
-    background-image: url(https://raw.githubusercontent.com/ChristineClemens/Homework02/master/jumbotron-image.jpg);
+    background-image: url(https://raw.githubusercontent.com/ChristineClemens/Homework02/master/assets/jumbotron-image.jpg);
     background-size: cover;
     background-position: center; 
 }
