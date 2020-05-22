@@ -1,204 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Permanent+Marker&display=swap" rel="stylesheet">
 
-    <title>Portfolio | Christine Clemens</title>
+        <title>Portfolio | Christine Clemens</title>
 
-    <style>
-        a:hover {
-            color: white;
-        }
-        a.btn:hover {
-            color: rgb(147,230,206);
-        }
-        footer {
-            position: fixed;
-            bottom: 20px;
-            left: 0px;
-            height: 25px;
-            width: 100%;
-            opacity: 0.6;
-        }
-        .tealText {
-            color: rgb(147,230,206);
-        }
-        .jumbotron-image {
-            background-image: url(https://raw.githubusercontent.com/ChristineClemens/Homework02/master/jumbotron-image.jpg);
-            background-size: cover;
-            background-position: center; 
-        }
-        .permanentMarkerFont {
-            font-family: "Permanent Marker", cursive;
-        }
-        .caveatFont {
-            font-family: "Caveat", cursive;
-        }
-        h5 {
-            font-family: "Permanent Marker", cursive;
-            background-color: rgb(147,230,206);
-            border-radius: 15px 0 15px 0;
-            padding: 10px 0 10px 0;
-        }
-        .card-img-top {
-            width: 100%;
-            height: 15vw;
-            object-fit: contain;
-        }
-        .map-container-section {
-            overflow:hidden;
-            padding-bottom:56.25%;
-            position:relative;
-            height:0;
-        }
-        .map-container-section iframe {
-            left:0;
-            top:0;
-            height:100%;
-            width:100%;
-            position:absolute;
-        }
-    </style>
-</head>
+        <style>
+            a:hover {
+                color: white;
+            }
+            a.btn:hover {
+                color: rgb(147,230,206);
+            }
+            footer {
+                position: fixed;
+                bottom: 20px;
+                left: 0px;
+                height: 25px;
+                width: 100%;
+                opacity: 0.6;
+            }
+            .tealText {
+                color: rgb(147,230,206);
+            }
+            .jumbotron-image {
+                background-image: url(https://raw.githubusercontent.com/ChristineClemens/Homework02/master/jumbotron-image.jpg);
+                background-size: cover;
+                background-position: center; 
+            }
+            .permanentMarkerFont {
+                font-family: "Permanent Marker", cursive;
+            }
+            .caveatFont {
+                font-family: "Caveat", cursive;
+            }
+            h5 {
+                font-family: "Permanent Marker", cursive;
+                background-color: rgb(147,230,206);
+                border-radius: 15px 0 15px 0;
+                padding: 10px 0 10px 0;
+            }
+            .card-img-top {
+                width: 100%;
+                height: 15vw;
+                object-fit: contain;
+            }
+            .map-container-section {
+                overflow:hidden;
+                padding-bottom:56.25%;
+                position:relative;
+                height:0;
+            }
+            .map-container-section iframe {
+                left:0;
+                top:0;
+                height:100%;
+                width:100%;
+                position:absolute;
+            }
+        </style>
+    </head>
 
-<!-- Navigation Bar -->
-<nav class="navbar navbar-dark bg-dark permanentMarkerFont">
-    <a class="navbar-brand" href="index.html">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Circle-icons-dev.svg/1200px-Circle-icons-dev.svg.png" 
-           width="30" 
-           height="30" 
-           class="d-inline-block align-top" 
-           alt="CC Logo" 
-           loading="lazy">
-        Christine Clemens
-    </a>
-    <div>
-        <ul class="nav">
-            <li class="nav-item active">
-                <a class="nav-link tealText" href="index.html">About<span class="sr-only">(current)</span></a>
-            </li>
-            <hr />
-            <li class="nav-item active">
-                <a class="nav-link tealText" href="portfolio.html">Portfolio</a>
-            </li>
-            <hr />
-            <li class="nav-item active">
-                <a class="nav-link tealText" href="contact.html">Contact</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-dark bg-dark permanentMarkerFont">
+        <a class="navbar-brand" href="index.html">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Circle-icons-dev.svg/1200px-Circle-icons-dev.svg.png" 
+            width="30" 
+            height="30" 
+            class="d-inline-block align-top" 
+            alt="CC Logo" 
+            loading="lazy">
+            Christine Clemens
+        </a>
+        <!--Navigable Page Links-->
+        <div>
+            <ul class="nav">
+                <li class="nav-item active">
+                    <a class="nav-link tealText" href="index.html">About<span class="sr-only">(current)</span></a>
+                </li>
+                <hr />
+                <li class="nav-item active">
+                    <a class="nav-link tealText" href="portfolio.html">Portfolio</a>
+                </li>
+                <hr />
+                <li class="nav-item active">
+                    <a class="nav-link tealText" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-<body class="container">
-<!-- Section: Contact v.1 -->
-    <section class="my-5">
-
-        <!-- Section heading -->
-        <h1 class="h1-responsive font-weight-bold text-center my-5 permanentMarkerFont tealText">Contact Me</h1>
-        <!-- Section description -->
-        <p class="text-center w-responsive mx-auto pb-5 caveatFont" style="font-size: 20px; text-indent: 50px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam
-        eum porro a pariatur veniam.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam
-        eum porro a pariatur veniam.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam
-        eum porro a pariatur veniam.</p>
-    
-        <!-- Grid row -->
-        <div class="row">
-    
-        <!-- Grid column -->
-        <div class="col-lg-5 mb-lg-0 mb-4">
-    
-            <!-- Form with header -->
-            <div class="card">
-                <div class="card-body">
-                    <!-- Header -->
-                    <div class="form-header blue accent-1">
-                        <h3 class="mt-2 permanentMarkerFont tealText"><i class="fas fa-envelope"></i>Get in touch:</h3>
+    <body class="container">
+        <section class="my-5">
+            <!-- "Contact" Heading Element-->
+            <h1 class="h1-responsive font-weight-bold text-center my-5 permanentMarkerFont tealText">Contact Me</h1>
+            <!-- Section Description -->
+            <p class="text-center w-responsive mx-auto pb-5 caveatFont" style="font-size: 20px; text-indent: 50px;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure 
+                provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a 
+                pariatur veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet 
+                numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum 
+                porro a pariatur veniam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, 
+                error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum 
+                quisquam eum porro a pariatur veniam.
+            </p>
+        
+            <!-- Contact Form with Header -->
+            <div class="row">       
+                <div class="col-lg-5 mb-lg-0 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="form-header blue accent-1">
+                                <h3 class="mt-2 permanentMarkerFont tealText"><i class="fas fa-envelope"></i>Get in touch:</h3>
+                            </div>
+                            <p class="dark-grey-text caveatFont">I'll get back to you as soon as I can!</p>
+                            
+                            <!-- Contact Form Body -->
+                            <!--Name Field-->
+                            <div class="md-form">
+                                <i class="fas fa-user prefix grey-text"></i>
+                                <input type="text" id="form-name" class="form-control" placeholder="First name Last name...">
+                                <label for="form-name">Your name</label>
+                            </div>
+                            <!--Email Field-->
+                            <div class="md-form">
+                                <i class="fas fa-envelope prefix grey-text"></i>
+                                <input type="text" id="form-email" class="form-control" placeholder="MyEmail@gmail.com...">
+                                <label for="form-email">Your email</label>
+                            </div>
+                            <!--Subject Line Field-->
+                            <div class="md-form">
+                                <i class="fas fa-tag prefix grey-text"></i>
+                                <input type="text" id="form-Subject" class="form-control" placeholder="Ex. Collaboration Inquiry...">
+                                <label for="form-Subject">Subject</label>
+                            </div>
+                            <!--Message Field-->
+                            <div class="md-form">
+                                <i class="fas fa-pencil-alt prefix grey-text"></i>
+                                <textarea id="form-text" class="form-control md-textarea" placeholder="Your detailed message..." rows="4"></textarea>
+                                <label for="form-text">Send message</label>
+                            </div>
+                            <!--"Submit" Button-->
+                            <div class="text-center">
+                                <a href="https://christineclemens.github.io/groupwork-day4/" 
+                                class="btn btn-primary permanentMarkerFont a:hover" 
+                                style="padding: 0 20px 0 20px; font-size: 25px; background-color: lightGray; border: 1px solid lightGray;">
+                                Submit
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <p class="dark-grey-text caveatFont">I'll get back to you as soon as I can!</p>
-                    <!-- Body -->
-                    <div class="md-form">
-                        <i class="fas fa-user prefix grey-text"></i>
-                        <input type="text" id="form-name" class="form-control" placeholder="First name Last name...">
-                        <label for="form-name">Your name</label>
+                </div>
+
+                <div class="col-lg-7">
+                    <!--Google Map Element-->
+                    <div id="map-container-section" class="z-depth-1-half map-container-section mb-4" style="height: 400px">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.2517907885003!2d-79.40309013383315!3d43.68452850842131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b335de13bd52d%3A0x3e1118e8139c8004!2sToronto%2C%20ON%20M4V%201J7!5e0!3m2!1sen!2sca!4v1590015819387!5m2!1sen!2sca"
+                            style="border:0" allowfullscreen>
+                        </iframe>
                     </div>
-                    <div class="md-form">
-                        <i class="fas fa-envelope prefix grey-text"></i>
-                        <input type="text" id="form-email" class="form-control" placeholder="MyEmail@gmail.com...">
-                        <label for="form-email">Your email</label>
-                    </div>
-                    <div class="md-form">
-                        <i class="fas fa-tag prefix grey-text"></i>
-                        <input type="text" id="form-Subject" class="form-control" placeholder="Ex. Collaboration Inquiry...">
-                        <label for="form-Subject">Subject</label>
-                    </div>
-                    <div class="md-form">
-                        <i class="fas fa-pencil-alt prefix grey-text"></i>
-                        <textarea id="form-text" class="form-control md-textarea" placeholder="Your detailed message..." rows="4"></textarea>
-                        <label for="form-text">Send message</label>
-                    </div>
-                    <div class="text-center">
-                        <a href="https://christineclemens.github.io/groupwork-day4/" 
-                           class="btn btn-primary permanentMarkerFont a:hover" 
-                           style="padding: 0 20px 0 20px; font-size: 25px; background-color: lightGray; border: 1px solid lightGray;">
-                           Submit
-                        </a>
+                    
+                    <!-- Contact Information -->
+                    <div class="row text-center caveatFont"  style="border: 1px solid lightgray; border-radius: 3px; padding: 16px 0 16px 0;">
+                        <!--Location-->
+                        <div class="col-md-4" style="border-right: 1px solid lightgray">
+                            <a class="btn-floating blue accent-1">
+                            <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                            <p>Toronto, M4V 1J7</p>
+                            <p class="mb-md-0">Canada</p>
+                        </div>
+                        <!--Phone Number and Contact Hours-->
+                        <div class="col-md-4" style="border-right: 1px solid lightgray">
+                            <a class="btn-floating blue accent-1">
+                            <i class="fas fa-phone"></i>
+                            </a>
+                            <p>+1-(416)-828-7698</p>
+                            <p class="mb-md-0">Mon - Fri: 8:00-22:00</p>
+                        </div>
+                        <!--Name and Email-->
+                        <div class="col-md-4">
+                            <a class="btn-floating blue accent-1">
+                            <i class="fas fa-envelope"></i>
+                            </a>
+                            <p>Christine Clemens</p>
+                            <p class="mb-0">christineclemens.tesol@gmail.com</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Form with header -->
-    
-        </div>
-        <!-- Grid column -->
-    
-        <!-- Grid column -->
-        <div class="col-lg-7">
-    
-            <!--Google map-->
-            <div id="map-container-section" class="z-depth-1-half map-container-section mb-4" style="height: 400px">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.2517907885003!2d-79.40309013383315!3d43.68452850842131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b335de13bd52d%3A0x3e1118e8139c8004!2sToronto%2C%20ON%20M4V%201J7!5e0!3m2!1sen!2sca!4v1590015819387!5m2!1sen!2sca"
-                    style="border:0" allowfullscreen>
-                </iframe>
+        </section>
+
+        <!--Fixed Footer-->
+        <footer>
+            <div class="alert alert-dark" role="alert">
+                Christine Clemens (c) 2020 SCS Coding Bootcamp
             </div>
-            <!-- Buttons-->
-            <div class="row text-center caveatFont"  style="border: 1px solid lightgray; border-radius: 3px; padding: 17px 0 17px 0;">
-                <div class="col-md-4" style="border-right: 1px solid lightgray">
-                    <a class="btn-floating blue accent-1">
-                    <i class="fas fa-map-marker-alt"></i>
-                    </a>
-                    <p>Toronto, M4V 1J7</p>
-                    <p class="mb-md-0">Canada</p>
-                </div>
-                <div class="col-md-4" style="border-right: 1px solid lightgray">
-                    <a class="btn-floating blue accent-1">
-                    <i class="fas fa-phone"></i>
-                    </a>
-                    <p>+1-(416)-828-7698</p>
-                    <p class="mb-md-0">Mon - Fri: 8:00-22:00</p>
-                </div>
-                <div class="col-md-4">
-                    <a class="btn-floating blue accent-1">
-                    <i class="fas fa-envelope"></i>
-                    </a>
-                    <p>Christine Clemens</p>
-                    <p class="mb-0">christineclemens.tesol@gmail.com</p>
-                </div>
-            </div>
-    
-        </div>
-        </div>
-    </section>
-    <footer>
-        <div class="alert alert-dark" role="alert">
-            Christine Clemens (c) 2020 SCS Coding Bootcamp
-        </div>
-    </footer>        
-</body>
+        </footer>        
+
+    </body>
 </html>
